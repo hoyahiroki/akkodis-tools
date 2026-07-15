@@ -1,0 +1,117 @@
+{
+  "$schema": "akkodis-brand-core/fonts-v1",
+  "source": "Akkodis Brand Guidelines V3 §6.1-6.6 / Brand Checklist §3 / V1社名ロゴ規定",
+  "last_verified": "2026-02-01",
+  "tier_1_primary": {
+    "comment": "外部納品物・キャンペーン・正式デザイン制作物で最優先",
+    "english": {
+      "heading": {
+        "family": "Tiempos Text",
+        "weights": ["Regular"],
+        "use": "見出し（語句の冒頭のみ大文字、全大文字化禁止）"
+      },
+      "body": {
+        "family": "Roboto",
+        "weights": ["Regular", "Light", "Bold"],
+        "use": "本文・キャプション・強調テキスト",
+        "rules": [
+          "全大文字化は強調用途のみ",
+          "タイトル・見出し・ボディコピーへの全大文字化は禁止"
+        ]
+      }
+    },
+    "japanese": {
+      "design": {
+        "families": ["ヒラギノ角ゴ", "游明朝"],
+        "use": "デザイン制作物（ポスター、KV、ブランド資料、外部キャンペーン）"
+      },
+      "business": {
+        "families": ["Meiryo UI"],
+        "use": "ビジネス文書（提案書、レポート、社内通達等）"
+      }
+    }
+  },
+  "tier_2_default_office": {
+    "comment": "PowerPoint, Word, Excel等のMicrosoft Office環境および、プライマリーフォント未インストール時のフォールバック",
+    "english": {
+      "heading": {
+        "family": "Times New Roman",
+        "weights": ["Regular"]
+      },
+      "body": {
+        "family": "Arial",
+        "weights": ["Regular", "Bold"]
+      }
+    },
+    "japanese": {
+      "all": {
+        "family": "Meiryo UI",
+        "weights": ["Regular", "Bold"]
+      }
+    }
+  },
+  "tier_3_cud_ud": {
+    "comment": "カラーユニバーサルデザイン配慮資料・視覚障害者向け文書では推奨",
+    "japanese": {
+      "family": "BIZ UDPゴシック",
+      "use": "アクセシビリティ配慮資料"
+    },
+    "english": {
+      "family": "Arial",
+      "comment": "Arial自体がUD準拠"
+    }
+  },
+  "company_name_logo": {
+    "comment": "AKKODiSコンサルティング株式会社 社名ロゴの組版規定（V1ガイドライン §15.1）",
+    "english_part": {
+      "family": "Arial Bold",
+      "width": "半角",
+      "applies_to": "AKKODiS"
+    },
+    "japanese_part": {
+      "family": "Meiryo UI Bold",
+      "width": "全角",
+      "applies_to": "コンサルティング株式会社"
+    },
+    "color_primary_cmyk": [100, 47, 22, 82],
+    "color_secondary_k": 100,
+    "rules": [
+      "ロゴと社名の併記は原則NG（一部の例外を除く）",
+      "クリアスペース：社名ロゴの『a』高さ分を四方に確保",
+      "使用必要時はマーケティング本部承認が必要"
+    ]
+  },
+  "email_signature": {
+    "comment": "メール署名のフォント仕様（V3 §10.14）",
+    "japanese": {
+      "name": {"family": "Meiryo UI Bold", "size_pt": 10},
+      "title_abbreviation": {"family": "Meiryo UI Bold", "size_pt": 9},
+      "contact_info": {"family": "Meiryo UI", "size_pt": 9},
+      "company_name": {"family": "Meiryo UI Bold", "size_pt": 8},
+      "postal_code": {"family": "Meiryo UI Bold", "size_pt": 8},
+      "address": {"family": "Meiryo UI", "size_pt": 8},
+      "url": {"family": "Meiryo UI", "size_pt": 8},
+      "legal_text": {"family": "Meiryo UI", "size_pt": 8}
+    },
+    "english": {
+      "name": {"family": "Arial Bold", "size_pt": 10},
+      "title": {"family": "Arial", "size_pt": 10},
+      "title_abbreviation": {"family": "Arial Bold", "size_pt": 9},
+      "contact_info": {"family": "Arial", "size_pt": 9},
+      "company_name": {"family": "Arial Bold", "size_pt": 9},
+      "address": {"family": "Arial", "size_pt": 8},
+      "url": {"family": "Arial", "size_pt": 8},
+      "legal_text": {"family": "Arial", "size_pt": 8}
+    },
+    "text_color_hex": "#001F33"
+  },
+  "weight_usage_rules": [
+    "Regular・Light・Boldを階層的に使い分けて見出し強調を表現する",
+    "全テキストを同一ウェイトで統一しない",
+    "無闇なBold多用を避ける"
+  ],
+  "forbidden_substitutions": [
+    "MS明朝・HGフォント・游ゴシック をビジネス文書で使用",
+    "日本語フォント（Yu Gothic, MSゴシック, MS明朝）で英語テキストを記載"
+  ]
+}

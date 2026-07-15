@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "akkodis-tools",
+  "description": "AKKODiSコンサルティング業務用のClaude Skill集（ブランド準拠・校正・HTML変換・UX監査・レポート生成・思考支援など）",
+  "owner": {
+    "name": "hoyahiroki",
+    "email": "hoyahiroki@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "akkodis-skills",
+      "description": "AKKODiS業務向けClaude Skill 13種をまとめて導入するプラグイン。ブランド準拠成果物生成・日本語校正・表記統一・各種CMS用HTML変換・UX監査/整形・月次マーケレポート・画像トーン統一・プロンプト設計・成果物批評・アイデア壁打ちを一括提供。",
+      "source": "./plugins/akkodis-skills",
+      "version": "1.0.0",
+      "author": {
+        "name": "hoyahiroki"
+      }
+    }
+  ]
+}

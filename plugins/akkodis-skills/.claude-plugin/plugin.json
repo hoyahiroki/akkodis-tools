@@ -1,0 +1,11 @@
+{
+  "name": "akkodis-skills",
+  "displayName": "AKKODiS Skills",
+  "description": "AKKODiS業務向けClaude Skill 13種を同梱。ブランド準拠成果物生成(akkodis-brand-core)、日本語校正(akkodis-proofreader)、表記統一(notation-rules)、CMS用HTML変換(insights/careers-interviews/client-stories)、UX監査(hcux-audit)とレポート整形(hcux-report-format)、月次マーケレポート(monthly-marketing-report-jp)、画像トーン統一(image-tone-match)、プロンプト設計(prompt-architect)、成果物批評(output-critic)、アイデア壁打ち(spark-and-grill)。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hoyahiroki",
+    "email": "hoyahiroki@gmail.com"
+  },
+  "license": "Internal use only — AKKODiSコンサルティング株式会社"
+}

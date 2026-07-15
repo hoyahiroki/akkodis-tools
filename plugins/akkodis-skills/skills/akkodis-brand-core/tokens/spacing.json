@@ -1,0 +1,78 @@
+{
+  "$schema": "akkodis-brand-core/spacing-v1",
+  "source": "Akkodis Brand Guidelines V3 §3.3 / Logo Guideline V1 / Brand Checklist §1",
+  "last_verified": "2026-02-01",
+  "logo": {
+    "minimum_size": {
+      "with_tagline": {
+        "print_mm": 40,
+        "screen_px": 200,
+        "rule": "40mm/200px未満ではタグラインなし版に切り替えること"
+      },
+      "without_tagline": {
+        "print_mm": 10,
+        "screen_px": 50,
+        "rule": "これより小さい使用は禁止"
+      }
+    },
+    "clear_space": {
+      "unit": "logo_a_width",
+      "comment": "ロゴ内の『A』文字の幅を1単位として、上下左右にこの単位以上のクリアスペースを確保",
+      "minimum_units": 1.0,
+      "violation_examples": [
+        "ロゴ周囲にテキスト密接配置",
+        "ロゴと画像が接触",
+        "ロゴ枠近接にグラフィック要素"
+      ]
+    },
+    "aspect_ratio": {
+      "without_tagline": {
+        "ratio_w_to_h": 7.93,
+        "comment": "添付PNGの寸法 1182×149 から算出"
+      }
+    },
+    "transformations_forbidden": [
+      "縦横比を変更しての変形・歪曲",
+      "回転（必ず水平で使用）",
+      "色の変更（マーケティング承認色のみ）",
+      "構成要素の改変（iの点の形変更等）",
+      "他フォントの重ね合わせ",
+      "ドロップシャドウ・発光・スタイル効果の追加",
+      "代替タグライン・部門名・商品名のロックアップ"
+    ],
+    "approved_color_variants": [
+      {"id": "primary_pos_blue_yellow", "file": "AKKODIS_Logo_RGB_BLUE.png", "use": "ホワイト/明るい背景"},
+      {"id": "primary_neg_white_yellow", "file": "AKKODIS_Logo_POS_RGB.png", "use": "濃いブルー/暗い背景"},
+      {"id": "primary_neg_blue_white", "file": "AKKODIS_Logo_RGB_WHITE.png", "use": "イエロー背景"},
+      {"id": "secondary_mono_blue", "file": "AKKODIS_Logo_RGB_BLUE.png", "use": "単色用途・ホワイト背景"},
+      {"id": "secondary_mono_white", "file": "AKKODIS_Logo_RGB_WHITE.png", "use": "単色用途・濃色背景"},
+      {"id": "mono_black", "file": "AKKODIS_Logo_RGB_BLACK.png", "use": "モノクロ印刷"}
+    ]
+  },
+  "page": {
+    "pptx_widescreen_16_9": {
+      "width_inch": 13.333,
+      "height_inch": 7.5,
+      "width_cm": 33.87,
+      "height_cm": 19.05,
+      "comment": "公式テンプレートのスライドサイズ"
+    },
+    "docx_a4_default": {
+      "width_mm": 210,
+      "height_mm": 297,
+      "margin_recommend_mm": {
+        "top": 25.4,
+        "bottom": 25.4,
+        "left": 25.4,
+        "right": 25.4
+      }
+    }
+  },
+  "typography_grid": {
+    "comment": "V3 §6.4 タイポグラフィー/Roboto より",
+    "columns": 9,
+    "text_max_columns": 3,
+    "remaining_for_visuals": "画像・インフォグラフィック用",
+    "comment_jp": "9列構成のグリッドで、本文は3列まで、残りは画像/図表に使用"
+  }
+}
