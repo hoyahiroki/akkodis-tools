@@ -12,6 +12,7 @@ Claude Code 上で以下を実行します（初回のみ）。
 ```
 /plugin marketplace add hoyahiroki/akkodis-tools
 /plugin install akkodis-skills@akkodis-tools
+/plugin install dev-tools@akkodis-tools
 ```
 
 - `user` スコープ（既定）でインストールすると、そのマシンの **全プロジェクト** でSkillが有効になります。
@@ -43,11 +44,20 @@ Claude Code 上で以下を実行します（初回のみ）。
 | `output-critic` | 生成ドラフトを独立批評し重大度付き指摘を出力 |
 | `spark-and-grill` | アイデア発散〜計画検証の思考パートナー |
 
+## 同梱Skill（dev-tools プラグイン）
+
+| Skill | 概要 |
+|---|---|
+| `gpt-check` | Claudeの成果物をOpenAI Codex CLI(GPT)にクロスチェックさせ、指摘を検証・反映する。事前に `codex` CLIのインストールとChatGPTアカウントでのログインが必要（環境ごとの手順はskill本文を参照） |
+
 ## リポジトリ構成
 
 ```
 .claude-plugin/marketplace.json          ← マーケットプレイス定義
-plugins/akkodis-skills/
+plugins/akkodis-skills/                  ← AKKODiS業務向けSkill
+├── .claude-plugin/plugin.json           ← プラグイン定義
+└── skills/<skill-name>/SKILL.md         ← 各Skill本体
+plugins/dev-tools/                       ← 個人の開発ワークフロー向けSkill
 ├── .claude-plugin/plugin.json           ← プラグイン定義
 └── skills/<skill-name>/SKILL.md         ← 各Skill本体
 ```

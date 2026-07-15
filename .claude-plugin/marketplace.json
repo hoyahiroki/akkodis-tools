@@ -15,6 +15,15 @@
       "author": {
         "name": "hoyahiroki"
       }
+    },
+    {
+      "name": "dev-tools",
+      "description": "個人の開発ワークフロー向けツール集。Codex CLI経由でGPTによるクロスモデルレビューを行うgpt-checkなどを提供。AKKODiS業務スキルとは独立したプラグイン。",
+      "source": "./plugins/dev-tools",
+      "version": "1.0.0",
+      "author": {
+        "name": "hoyahiroki"
+      }
     }
   ]
 }

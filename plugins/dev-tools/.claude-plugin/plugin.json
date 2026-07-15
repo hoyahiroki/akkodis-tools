@@ -1,0 +1,11 @@
+{
+  "name": "dev-tools",
+  "displayName": "Dev Tools",
+  "description": "個人の開発ワークフロー向けClaude Skill集。Codex CLI経由でGPTによるクロスモデルレビューを行うgpt-checkなどを提供。AKKODiS業務スキル(akkodis-skills)とは独立したカテゴリ。",
+  "version": "1.0.0",
+  "author": {
+    "name": "hoyahiroki",
+    "email": "hoyahiroki@gmail.com"
+  },
+  "license": "Personal use"
+}
