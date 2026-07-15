@@ -7,7 +7,11 @@ AKKODiS業務用のClaude Skill / スクリプト置き場。
 
 ## インストール方法
 
-Claude Code 上で以下を実行します（初回のみ）。
+利用環境によって手順が異なります。
+
+### A. ターミナル版 Claude Code（デスクトップ／CLI）
+
+以下を実行します（初回のみ）。
 
 ```
 /plugin marketplace add hoyahiroki/akkodis-tools
@@ -16,8 +20,32 @@ Claude Code 上で以下を実行します（初回のみ）。
 ```
 
 - `user` スコープ（既定）でインストールすると、そのマシンの **全プロジェクト** でSkillが有効になります。
-- チームで共有したい場合はプロジェクト直下の `.claude/settings.json` に登録するため、
-  `--scope project` を付けてインストールし、そのリポジトリにコミットしてください。
+- チームで共有したい場合は `--scope project` を付けてインストールし、生成された
+  `.claude/settings.json` をそのリポジトリにコミットしてください。
+
+### B. Claude Code on the web（claude.ai/code）
+
+web版では `/plugin` コマンドは使えません。また各セッションは使い捨てのため、
+プラグインは **リポジトリにコミットした `.claude/settings.json` で宣言的に有効化** します。
+利用したいリポジトリの `.claude/settings.json` に次を含めてコミットします（このリポジトリには同梱済み）。
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "akkodis-tools": {
+      "source": { "source": "github", "repo": "hoyahiroki/akkodis-tools" }
+    }
+  },
+  "enabledPlugins": {
+    "akkodis-skills@akkodis-tools": true,
+    "dev-tools@akkodis-tools": true
+  }
+}
+```
+
+セッション起動時にマーケットプレイスを取得し、指定プラグインを自動で有効化します。
+web版に「全リポジトリ一括」は無いため、使いたいリポジトリごとにこのファイルをコミットしてください
+（組織全体へ一括適用したい場合は管理者のサーバー管理設定を利用します）。
 
 インストール後の確認・更新：
 

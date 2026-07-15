@@ -1,0 +1,14 @@
+{
+  "extraKnownMarketplaces": {
+    "akkodis-tools": {
+      "source": {
+        "source": "github",
+        "repo": "hoyahiroki/akkodis-tools"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "akkodis-skills@akkodis-tools": true,
+    "dev-tools@akkodis-tools": true
+  }
+}
