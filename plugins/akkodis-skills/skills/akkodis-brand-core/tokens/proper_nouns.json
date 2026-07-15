@@ -1,0 +1,164 @@
+{
+  "$schema": "akkodis-brand-core/proper-nouns-v1",
+  "source": "Brand Checklist §5 (Proper Nouns) / §6 (IOWN)",
+  "last_verified": "2026-05-01",
+  "company_names": {
+    "japan_legal": {
+      "correct": ["AKKODiSコンサルティング株式会社", "AKKODiS Consulting Ltd.", "AKKODiSコンサルティング"],
+      "forbidden": ["Akkodisコンサルティング"],
+      "rule": "日本国内の文脈では『AKKODiS』表記。グローバル文脈での『Akkodis』は許容"
+    },
+    "brand_short": {
+      "correct": ["AKKODiS"],
+      "forbidden_in_jp_context": ["Akkodis", "AKKODIS", "akkodis"],
+      "exception": "グローバルの文脈・本社発行物では『Akkodis』可"
+    }
+  },
+  "service_lines": {
+    "ordering_rule": "Consulting → Solution → Academy → Talent の順で統一",
+    "items": [
+      {
+        "correct": ["Consulting", "コンサルティング"],
+        "forbidden": ["コンサル", "VI", "バリューチェーン・イノベーター"]
+      },
+      {
+        "correct": ["Solution", "ソリューション"],
+        "forbidden": ["Solutions"],
+        "comment": "複数形にしない"
+      },
+      {"correct": ["Academy", "アカデミー"]},
+      {"correct": ["Talent", "タレント"]}
+    ]
+  },
+  "internal_terms": {
+    "consultants": {
+      "correct": ["テックコンサルタント"],
+      "forbidden": ["エンジニア社員", "無期雇用派遣エンジニア"],
+      "definition": "技術力提供のみならず顧客課題解決・変革をリードする所属エンジニアの総称"
+    },
+    "innovation_lab": {
+      "correct": ["AKKODiS innovation Lab."],
+      "forbidden": ["AKKODiS Innovation Lab."],
+      "rule": "innovation の i は必ず小文字"
+    },
+    "gdc": {
+      "correct_first_use": "Global Delivery Center（GDC）",
+      "correct_subsequent": "GDC",
+      "japanese_form": "グローバルデリバリーセンター",
+      "rule": "初出時は『Global Delivery Center（GDC）』、同ページ内2回目以降はGDCのみ可"
+    },
+    "career_roles": {
+      "career_coach": {"correct": ["キャリアコーチ"], "forbidden": ["Career coach"]},
+      "career_planner": {"correct": ["キャリアプランナー"], "forbidden": ["Career planner"]}
+    },
+    "candidate": {
+      "correct": ["求職者"],
+      "forbidden": ["キャンディデイト"],
+      "context": "世の中的な求職者全般を指す場合"
+    },
+    "mypage": {
+      "correct": ["MyPage"],
+      "forbidden": ["マイページ", "MyAdecco"],
+      "context": "新システム移行後"
+    },
+    "social_innovation": {
+      "correct": ["Social Innovation Partners"],
+      "forbidden": ["地方創生VI"],
+      "context": "2023年より改称"
+    },
+    "dispatch_employment": {
+      "correct": ["無期雇用派遣"],
+      "forbidden": ["特定派遣"],
+      "rule": "改正派遣法により2018年以降『特定派遣』は使用不可"
+    },
+    "work_at_client": {
+      "correct": ["就業"],
+      "forbidden": ["稼働"],
+      "context": "Adecco/AKKODiSから派遣先で勤務することを指す"
+    },
+    "fusion": {
+      "correct": ["フュージョン", "Fusion"],
+      "forbidden": ["fusion", "ﾌｭｰｼﾞｮﾝ"],
+      "rule": "全角カタカナまたは先頭大文字Fusion"
+    },
+    "fusion_activators": {
+      "correct": ["Fusion Activators"],
+      "forbidden": ["fusion activators", "フュージョンアクティベーターズ"]
+    },
+    "value_proposition": {
+      "correct": ["融合"],
+      "forbidden": ["伴走型コンサルティング", "End To Endコンサルティング", "E2Eコンサルティング"]
+    }
+  },
+  "human_resources_term": {
+    "default": {
+      "correct": "人財派遣サービス／人財派遣",
+      "rule": "基本は『財』を使用"
+    },
+    "exception": {
+      "correct": "人材派遣",
+      "context": "Web SEO対策・公的文書（契約書等）では『材』を使用"
+    }
+  },
+  "vision_statement": {
+    "correct": ["日本企業を、世界企業へ、現場変革から。"],
+    "forbidden": ["日本を、課題解決先進国に。"],
+    "comment": "ビジョンの正式表記"
+  },
+  "iown": {
+    "comment": "IOWN®表記はコンプライアンスリスクに直結。最厳格適用",
+    "rules": [
+      {
+        "id": "I-01",
+        "rule": "IOWN®（単体・無修飾使用時）",
+        "correct": "IOWN®",
+        "forbidden": ["IOWN", "アイオン"],
+        "first_occurrence_addendum": "コンテンツ内にIOWNが初めて出る場合は『IOWN®（Innovative Optical and Wireless Network）』として正式名称を併記"
+      },
+      {
+        "id": "I-02",
+        "rule": "IOWN GLOBAL FORUM™",
+        "correct": "IOWN GLOBAL FORUM™",
+        "forbidden": ["IOWN GLOBAL FORUM", "IOWN Global Forum"],
+        "comment": "全大文字＋™必須"
+      },
+      {
+        "id": "I-03",
+        "rule": "AKKODiSのフォーラム関係性",
+        "correct": "IOWN GLOBAL FORUM™のスポンサーメンバー",
+        "forbidden": ["IOWN GLOBAL FORUM™のメンバー"],
+        "comment": "『スポンサー』を必ず付ける"
+      },
+      {
+        "id": "I-04_06",
+        "rule": "IOWN+付属語の場合は®不要",
+        "correct_examples": ["IOWN構想", "IOWN推進室", "IOWN構想基礎研修"],
+        "forbidden_examples": ["IOWN®構想", "IOWN®推進室", "IOWN®構想基礎研修"]
+      },
+      {
+        "id": "I-08",
+        "rule": "IOWNの主幹説明",
+        "correct": "IOWN®は、IOWN GLOBAL FORUM™が中心となって世界の各企業が協力して推進している次世代コミュニケーション基盤",
+        "forbidden": "IOWN®は、日本電信電話株式会社（NTT）を中心に〜",
+        "rationale": "IOWNの主幹はIOWN GLOBAL FORUM。NTT単体ではない（2024年7月時点）"
+      },
+      {
+        "id": "I-09",
+        "rule": "注釈使用時の固定文",
+        "correct_template": "※1：IOWN GLOBAL FORUM™の詳細については、https://iowngf.org/をご参照下さい。AKKODiSコンサルティングは、「IOWN®」を推進するIOWN GLOBAL FORUM™のスポンサーメンバーです。",
+        "comment": "独自注釈文は禁止。上記固定文を使用"
+      },
+      {
+        "id": "I-10",
+        "rule": "注釈マーカーによる®省略（位置基準・初出非依存）",
+        "annotation_marker": "IOWN®（Innovative Optical and Wireless Networkの略で、NTT株式会社の商標または登録商標。以下、IOWN）",
+        "effect": "文書内の任意の単体IOWN1か所（初出でなくてよい）にannotation_markerを付すと、その位置以降の単体IOWNは®省略可（IOWN表記）",
+        "before_marker": "IOWN®（®必須）",
+        "no_marker_document": "IOWN®（®必須・従来の厳格ルール）",
+        "with_attached_word": "®不要（I-04_06のまま。位置に依存しない）",
+        "rights_holder_notation": "NTT株式会社／商標または登録商標（AKKODiS公式サイト本番準拠）",
+        "source": "Brand Checklist v20260622 §6 I-10"
+      }
+    ]
+  }
+}
